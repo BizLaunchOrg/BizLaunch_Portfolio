@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Use JS config for content, theme, and darkMode */
+@config "../tailwind.config.js";
+
+/* Explicit content sources (backup for scanning) */
+@source "./src/**/*.{js,ts,jsx,tsx}";
+@source "./index.html";
+
 body {
   margin: 0;
   font-family:
