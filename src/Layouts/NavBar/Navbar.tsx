@@ -18,10 +18,16 @@ const Navbar = () => {
     }
   }, [dark]);
   return (
-    <div className="w-full bg-white shadow-sm w-full bg-white dark:bg-slate-900 ">
+    <div className="w-full bg-white shadow-sm dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-5">
-          <img src={logo} alt="BizLaunch Logo" className="w-[50%]" />
+          {/* give the logo a fixed height so it doesn't collapse to alt text when the
+              image fails to load; w-auto keeps aspect ratio */}
+          <img
+            src={logo}
+            alt="BizLaunch Logo"
+            className="h-8 w-auto" // adjust to suit your design
+          />
           <span className="text-lg font-semibold text-slate-900">
             BizLaunch
           </span>
