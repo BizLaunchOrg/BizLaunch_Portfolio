@@ -3,7 +3,7 @@ import { logo } from "../../Constants/Contants";
 import { Link } from "react-router-dom";
 import ButtonGroup from "../../Components/ButtonGroup";
 import Button from "../../Components/Button";
-import { IoMdMoon, IoMdSunny } from "react-icons/io"; // use sun instead of missing outline icon
+import { IoMdMoon, IoMdSunny } from "react-icons/io";
 
 const Navbar = () => {
   const [dark, setDark] = useState(false);
@@ -51,12 +51,9 @@ const Navbar = () => {
              dark:text-slate-200 dark:hover:bg-slate-800"
             aria-label="Toggle theme"
           >
-            {/* TS2706/TS2786: IconType returns ReactNode (may be undefined). ignore so JSX accepts it */}
             {dark ? (
-              // @ts-expect-error
               <IoMdMoon size={18} />
             ) : (
-              // @ts-expect-error
               <IoMdSunny size={18} />
             )}
           </Button>
