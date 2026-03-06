@@ -13,6 +13,7 @@ import SaveSection from "./SaveSection";
 import ContactSection from "./ContactSection";
 import HowItWorksSection from "./HowItWorksSection";
 import StatsSection from "./StatsSection";
+import FAQSection from "./FAQSection";
 import { ArrowForward, ShoppingCart } from "@mui/icons-material";
 
 export default function Landing() {
@@ -26,10 +27,10 @@ export default function Landing() {
               Limited Time Offer
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
-              Get a <span className="text-gray-900 bg-red-100">FREE</span> business website
-              that actually brings customers
+              Get a <span className="text-gray-900 bg-red-100">FREE</span>{" "}
+              business website that actually brings customers
             </h1>
-            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Stop paying thousands for design. We build your high-converting
               site for free. You only pay for your domain. Optional paid ads
               available when you're ready to scale.
@@ -276,6 +277,9 @@ export default function Landing() {
       <SaveSection />
       {/* how it works timeline */}
       <HowItWorksSection />
+
+      {/* FAQ section */}
+      <FAQSection />
 
       {/* contact form section */}
       <ContactSection />

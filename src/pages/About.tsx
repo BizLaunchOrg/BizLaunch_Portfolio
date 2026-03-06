@@ -1,20 +1,22 @@
 import React from "react";
-import NavBarLogin from "../Layouts/NavBar/NavBarLogin";
-import FooterLogin from "../Layouts/footer/FooterLogin";
+import { GiSparkles } from "react-icons/gi"; // for Simplicity
+import { GiScales } from "react-icons/gi"; // for Fairness
+import { IoFlash } from "react-icons/io5"; // for Speed
+import { AiOutlineRise } from "react-icons/ai"
 
 
 const About: React.FC = () => {
   return (
     <div className="pt-20">
-      {/* account for fixed nav */}
-      <NavBarLogin />
+      
+      
 
       <header className="relative px-6 py-20 overflow-hidden bg-white dark:bg-slate-900">
         <div className="absolute inset-0 navy-pattern"></div>
         <div className="relative z-10 max-w-md mx-auto text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-primary dark:text-white mb-6">
+          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white mb-6">
             Built to make every business{" "}
-            <span className="text-accent">visible</span> online
+            <span className="text-red-500">visible</span> online
           </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg">
             Democratizing the digital landscape by removing the high cost of
@@ -187,7 +189,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <FooterLogin/>
+      
     </div>
   );
 };
