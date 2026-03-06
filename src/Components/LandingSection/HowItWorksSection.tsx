@@ -40,7 +40,7 @@ const HowItWorksSection: React.FC = () => {
       className="py-24 px-4 bg-slate-50 dark:bg-slate-900/50"
     >
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-primary dark:text-white">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white">
           Our 6-Step Rocket Launch
         </h2>
         <div className="space-y-12">
@@ -51,7 +51,7 @@ const HowItWorksSection: React.FC = () => {
               )}
               <div
                 className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl z-10 shrink-0 border-4 border-white dark:border-slate-900 ${
-                  step.accent ? "bg-accent" : "bg-primary"
+                  step.accent ? "bg-red-500" : "bg-gray-900"
                 } text-white`}
               >
                 {idx + 1}
