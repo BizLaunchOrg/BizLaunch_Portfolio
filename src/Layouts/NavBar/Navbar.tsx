@@ -6,28 +6,32 @@ import Button from "../../Components/Button";
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 
 const Navbar = () => {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+  return localStorage.getItem("theme") === "dark";
+});
 
-  useEffect(() => {
-    const root = window.document.documentElement;
+useEffect(() => {
+  const root = window.document.documentElement;
 
-    if (dark) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-  }, [dark]);
+  if (dark) {
+    root.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    root.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
+}, [dark]);
   return (
-    <div className="w-full bg-white shadow-sm dark:bg-slate-900">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-5">
-          {/* give the logo a fixed height so it doesn't collapse to alt text when the
-              image fails to load; w-auto keeps aspect ratio */}
+        <Link to="/">
           <img
             src={logo}
             alt="BizLaunch Logo"
-            className="h-8 w-auto" // adjust to suit your design
+            className="h-8 w-auto" 
           />
+          </Link>
           <span className="text-lg font-semibold text-slate-900">
             BizLaunch
           </span>
