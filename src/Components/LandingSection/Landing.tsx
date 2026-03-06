@@ -11,6 +11,8 @@ import ButtonGroup from "../ButtonGroup";
 import RecentWork from "./RecentWork";
 import SaveSection from "./SaveSection";
 import ContactSection from "./ContactSection";
+import HowItWorksSection from "./HowItWorksSection";
+import StatsSection from "./StatsSection";
 
 export default function Landing() {
   return (
@@ -184,6 +186,9 @@ export default function Landing() {
         </div>
       </div>
 
+      {/* statistics counters */}
+      <StatsSection />
+
       {/* promo work section */}
       {/* imported below */}
 
@@ -312,6 +317,9 @@ export default function Landing() {
 
       {/* contact form section */}
       <ContactSection />
+
+      {/* how it works timeline */}
+      <HowItWorksSection />
     </section>
   );
 }

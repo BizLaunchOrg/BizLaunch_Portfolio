@@ -9,7 +9,7 @@ const SaveSection: React.FC = () => {
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
         <h2 className="font-display text-4xl lg:text-6xl font-bold mb-6 relative z-10">
           Let's put your business online — for{" "}
-          <span className="text-accent underline">FREE</span>.
+          <span className="text-red-500 underline">FREE</span>.
         </h2>
         <p className="text-slate-300 text-xl mb-10 max-w-2xl mx-auto relative z-10">
           Limited slots available for February 2025 builds. Reserve yours today

@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
 
           <div className="space-y-6">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-accent">
+              <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-red-500">
                 <MdEmail className="text-xl" />
               </div>
               <div>
@@ -34,7 +34,7 @@ const ContactSection: React.FC = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-accent">
+              <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-red-500">
                 <MdLocationOn className="text-xl" />
               </div>
               <div>
@@ -63,7 +63,7 @@ const ContactSection: React.FC = () => {
             <div className="space-y-2">
               <label className="text-sm font-bold">Work Email</label>
               <input
-                className="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
+                className="w-full px-4 py-3 rounded-full border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
                 placeholder="john@business.com"
                 type="email"
               />
@@ -73,7 +73,7 @@ const ContactSection: React.FC = () => {
           <div className="space-y-2">
             <label className="text-sm font-bold">Business URL (if any)</label>
             <input
-              className="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
+              className="w-full px-4 py-3 rounded-full border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
               placeholder="www.example.com"
               type="text"
             />
@@ -82,7 +82,7 @@ const ContactSection: React.FC = () => {
           <div className="space-y-2">
             <label className="text-sm font-bold">How can we help?</label>
             <textarea
-              className="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
+              className="w-full px-4 py-3 rounded-3xl border-slate-500 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-accent transition-all"
               placeholder="Tell us about your business goals..."
               rows={4}
             />
