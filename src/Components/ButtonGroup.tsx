@@ -1,21 +1,22 @@
-import React, { ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 
-export interface ButtonGroupProps {
-  /** buttons or elements to render side-by-side */
+export interface ButtonGroupProps extends HTMLAttributes<HTMLDivElement> {
+  /** elements inside the group */
   children: ReactNode;
-  /** additional container classes */
-  className?: string;
-  /** spacing between buttons (Tailwind margin-x utility) */
+  /** Tailwind spacing utility (e.g. "space-x-4") */
   spacing?: string;
+  /** additional Tailwind or custom classes */
+  className?: string;
 }
 
 const ButtonGroup: React.FC<ButtonGroupProps> = ({
   children,
+  spacing = "",
   className = "",
-  spacing = "space-x-2",
+  ...rest
 }) => {
   return (
-    <div className={`inline-flex items-center ${spacing} ${className}`}>
+    <div className={`${spacing} ${className}`} {...rest}>
       {children}
     </div>
   );
