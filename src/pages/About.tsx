@@ -1,8 +1,9 @@
 import React from "react";
-import { GiSparkles } from "react-icons/gi"; // for Simplicity
+
 import { GiScales } from "react-icons/gi"; // for Fairness
-import { IoFlash } from "react-icons/io5"; // for Speed
+import {  IoFlashSharp } from "react-icons/io5"; // for Speed
 import { AiOutlineRise } from "react-icons/ai"
+import { TbSparkles } from "react-icons/tb";
 
 
 const About: React.FC = () => {
@@ -64,9 +65,10 @@ const About: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 gap-4">
             <div className="p-6 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
-              <span className="material-icons-outlined text-accent mb-4 text-3xl">
-                auto_awesome
-              </span>
+              
+                <TbSparkles  className="material-icons-outlined text-red-500 mb-4 text-4xl" />
+
+           
               <h3 className="font-display font-bold text-lg mb-2">
                 Simplicity
               </h3>
@@ -76,9 +78,9 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="p-6 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
-              <span className="material-icons-outlined text-accent mb-4 text-3xl">
-                balance
-              </span>
+              <GiScales  className="material-icons-outlined text-red-500 mb-4 text-4xl"/>
+
+            
               <h3 className="font-display font-bold text-lg mb-2">Fairness</h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 Honest pricing models where you only pay for what actually costs
@@ -86,9 +88,8 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="p-6 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
-              <span className="material-icons-outlined text-accent mb-4 text-3xl">
-                bolt
-              </span>
+              <IoFlashSharp className="material-icons-outlined text-red-500 mb-4 text-4xl" />
+
               <h3 className="font-display font-bold text-lg mb-2">Speed</h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 Getting you online in days, not months, because momentum is
@@ -96,9 +97,8 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="p-6 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
-              <span className="material-icons-outlined text-accent mb-4 text-3xl">
-                trending_up
-              </span>
+             <AiOutlineRise className="material-icons-outlined text-red-500 mb-4 text-4xl" />
+
               <h3 className="font-display font-bold text-lg mb-2">Growth</h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm">
                 Our success is tied to yours. We thrive when your traffic and
