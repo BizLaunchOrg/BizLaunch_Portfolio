@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* ============================================
+   Custom theme (agency colors & font)
+   ============================================ */
+@theme {
+  --color-primary: #0f172a;
+  --color-accent: #ef4444;
+  --color-background-light: #f8fafc;
+  --color-background-dark: #020617;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-default: 0.75rem;
+}
+
+/* ============================================
+   Global base styles
+   ============================================ */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    min-height: max(884px, 100dvh);
+    @apply font-display antialiased overflow-x-hidden;
+  }
+}
+
+/* Light/Dark: applied via class on <html> */
+body {
+  @apply bg-background-light text-slate-900;
+}
+
+.dark body {
+  @apply bg-background-dark text-slate-100;
+}
+
+/* ============================================
+   Component utilities (from original design)
+   ============================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Red highlight behind "FREE" text */
+.circle-red {
+  @apply relative z-10;
+}
+
+.circle-red::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 60%;
+  background: rgba(239, 68, 68, 0.15);
+  border-radius: 100%;
+  transform: translateY(-40%) rotate(-2deg);
+  z-index: -1;
+}
+
+/* Soft gradient background used on About hero section */
+.hero-gradient {
+  background: radial-gradient(
+      circle at top left,
+      rgba(239, 68, 68, 0.08),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(15, 23, 42, 0.12),
+      transparent 60%
+    );
+}
