@@ -1,26 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
-import About from "./pages/About";
-
-import LandingLayout from "./Layouts/LandingLayout";
-import AboutLayout from "./Layouts/AboutLayout";
+import { Routes, Route } from "react-router-dom";
+import { MainLayout } from "./layouts/MainLayout/MainLayout";
+import { Home } from "./pages/Home/Home";
+import { About } from "./pages/About/About";
+import { ScrollToTop } from "./components/Common/ScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-
-        <Route element={<LandingLayout />}>
+    <>
+      <ScrollToTop />
+      <MainLayout>
+        <Routes>
           <Route path="/" element={<Home />} />
-        </Route>
-
-        <Route element={<AboutLayout />}>
           <Route path="/about" element={<About />} />
-        </Route>
-
-      </Routes>
-    </Router>
+        </Routes>
+      </MainLayout>
+    </>
   );
 }
 

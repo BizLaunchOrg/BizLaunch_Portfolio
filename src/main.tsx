@@ -1,7 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import App from "./App.tsx";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import reportWebVitals from "./reportWebVitals";
 
 // Apply saved theme before React loads
@@ -13,14 +15,14 @@ if (theme === "dark") {
   document.documentElement.classList.remove("dark");
 }
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+  </StrictMode>
 );
 
 reportWebVitals();
