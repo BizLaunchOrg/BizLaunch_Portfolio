@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* ============================================
-   Custom theme (agency colors & font)
-   ============================================ */
+
 @theme {
   --color-primary: #0f172a;
   --color-accent: #ef4444;
@@ -12,9 +10,7 @@
   --radius-default: 0.75rem;
 }
 
-/* ============================================
-   Global base styles
-   ============================================ */
+
 @layer base {
   html {
     @apply scroll-smooth;
