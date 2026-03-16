@@ -23,7 +23,7 @@ export function Nav() {
             className="h-8 w-8 object-contain"
             src={LOGO_IMG}
           />
-          <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
+          <span className="font-extrabold text-xl tracking-tight text-gray-900 dark:text-white">
             BIZLAUNCH
           </span>
         </div>
@@ -33,7 +33,7 @@ export function Nav() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="p-2 text-primary dark:text-white"
+            className="p-2 text-gray-900 dark:text-white"
             aria-label={isDark ? "Light mode" : "Dark mode"}
           >
             <span className="material-icons text-xl">
@@ -42,7 +42,7 @@ export function Nav() {
           </button>
           <button
             type="button"
-            className="p-2 text-primary dark:text-white"
+            className="p-2 text-gray-900 dark:text-white"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -61,7 +61,7 @@ export function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="hover:text-accent transition-colors text-primary dark:text-white"
+                className="hover:text-accent transition-colors text-gray-900 dark:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -70,7 +70,7 @@ export function Nav() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="hover:text-accent transition-colors text-primary dark:text-white"
+                className="hover:text-accent transition-colors text-gray-900 dark:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -88,7 +88,7 @@ export function Nav() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="hidden md:flex p-2 rounded-full text-primary dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            className="hidden md:flex p-2 rounded-full text-gray-900 dark:text-white hover:text-accent dark:hover:bg-slate-800 transition-colors"
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             <span className="material-icons">

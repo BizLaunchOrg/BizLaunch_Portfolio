@@ -18,7 +18,7 @@ export function Home() {
   return (
     <>
       <HeroSection />
-      <TrustedBySection />
+      {/* <TrustedBySection /> */}
       <WhySection />
       <FeaturesSection />
       <PricingSection />
