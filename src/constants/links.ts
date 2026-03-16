@@ -14,7 +14,7 @@ export const CTA_LINK = { label: "Get Your FREE Website",   };
 
 export const FOOTER_QUICK_LINKS = [
   { label: "About Us", href: "#" },
-  { label: "Our Mission", href: "#" },
+  { label: "Our Mission", href: "/OurMission" },
   { label: "Portfolio", href: "#work" },
   { label: "Pricing", href: "#pricing" },
 ] as const;

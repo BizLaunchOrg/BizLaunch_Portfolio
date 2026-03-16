@@ -26,7 +26,7 @@ export default function CTAButton() {
 
           <a
             href="mailto:youremail@gmail.com"
-            className="flex items-center justify-center gap-2 bg-blue-500 text-white py-2 rounded"
+            className="flex items-center justify-center gap-2 bg-gray-900 text-white py-2 rounded"
           >
             <FaEnvelope size={18} />
             Send Email

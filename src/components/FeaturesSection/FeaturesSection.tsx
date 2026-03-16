@@ -32,7 +32,7 @@ export function FeaturesSection() {
   return (
     <section className="py-20 px-4 bg-slate-50 dark:bg-slate-900/50">
   <div className="text-center mb-16">
-            <h2 className="font-display text-4xl font-bold mb-4">
+            <h2 className="font-display text-5xl font-bold mb-4">
               Everything you need.{" "}
               <span className="text-red-600">Zero Cost.</span>
             </h2>

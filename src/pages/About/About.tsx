@@ -1,4 +1,4 @@
-import { OurMissionSection } from "../../components/OurMissionSection/OurMissionSection";
+// import { OurMissionSection } from "../../components/OurMissionSection/OurMissionSection";
 import { Footer } from "../../components/Footer/Footer";
 
 export function About() {
