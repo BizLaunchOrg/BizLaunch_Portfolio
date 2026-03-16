@@ -31,7 +31,15 @@ const FEATURES = [
 export function FeaturesSection() {
   return (
     <section className="py-20 px-4 bg-slate-50 dark:bg-slate-900/50">
-      
+  <div className="text-center mb-16">
+            <h2 className="font-display text-4xl font-bold mb-4">
+              Everything you need.{" "}
+              <span className="text-red-600">Zero Cost.</span>
+            </h2>
+            <p className="text-slate-600 dark:text-slate-400">
+              Premium features that other agencies charge extra for.
+            </p>
+          </div>      
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {FEATURES.map((feature) => (

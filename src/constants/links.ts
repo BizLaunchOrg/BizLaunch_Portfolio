@@ -10,7 +10,7 @@ export const NAV_LINKS = [
   { label: "Pricing", href: "#pricing" },
 ] as const;
 
-export const CTA_LINK = { label: "Get Your FREE Website", href: "#contact" };
+export const CTA_LINK = { label: "Get Your FREE Website",   };
 
 export const FOOTER_QUICK_LINKS = [
   { label: "About Us", href: "#" },

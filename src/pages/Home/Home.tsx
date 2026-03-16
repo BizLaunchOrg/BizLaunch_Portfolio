@@ -3,12 +3,12 @@
  * Each section is a separate component for clean, maintainable code.
  */
 import { HeroSection } from "../../components/HeroSection/HeroSection";
-import { TrustedBySection } from "../../components/TrustedBySection/TrustedBySection";
+// import { TrustedBySection } from "../../components/TrustedBySection/TrustedBySection";
 import { WhySection } from "../../components/WhySection/WhySection";
 import { FeaturesSection } from "../../components/FeaturesSection/FeaturesSection";
 import { PricingSection } from "../../components/PricingSection/PricingSection";
 import { HowItWorksSection } from "../../components/HowItWorksSection/HowItWorksSection";
-import { StatsSection } from "../../components/StatsSection/StatsSection";
+// import { StatsSection } from "../../components/StatsSection/StatsSection";
 import { WorkSection } from "../../components/WorkSection/WorkSection";
 import { FAQSection } from "../../components/FAQSection/FAQSection";
 import { FinalCTASection } from "../../components/FinalCTASection/FinalCTASection";
@@ -23,7 +23,7 @@ export function Home() {
       <FeaturesSection />
       <PricingSection />
       <HowItWorksSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <WorkSection />
       <FAQSection />
       <FinalCTASection />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NAV_LINKS, CTA_LINK, LOGO_IMG } from "../../constants/links";
 import { useTheme } from "../../contexts/ThemeContext";
+import CTAButton from "../ctaButton/ctaButton";
 
 /**
  * Navigation bar: logo, links, and CTA button.
@@ -23,7 +24,7 @@ export function Nav() {
             className="h-8 w-8 object-contain"
             src={LOGO_IMG}
           />
-          <span className="font-extrabold text-xl tracking-tight text-gray-900 dark:text-white">
+          <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
             BIZLAUNCH
           </span>
         </div>
@@ -33,7 +34,7 @@ export function Nav() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="p-2 text-gray-900 dark:text-white"
+            className="p-2 text-primary dark:text-white"
             aria-label={isDark ? "Light mode" : "Dark mode"}
           >
             <span className="material-icons text-xl">
@@ -42,7 +43,7 @@ export function Nav() {
           </button>
           <button
             type="button"
-            className="p-2 text-gray-900 dark:text-white"
+            className="p-2 text-primary dark:text-white"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -61,7 +62,7 @@ export function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="hover:text-accent transition-colors text-gray-900 dark:text-white"
+                className="hover:text-accent transition-colors text-primary dark:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -70,25 +71,27 @@ export function Nav() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="hover:text-accent transition-colors text-gray-900 dark:text-white"
+                className="hover:text-accent transition-colors text-primary dark:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
               </Link>
             )
           )}
-          <a
+          {/* <a
             href={CTA_LINK.href}
             className="bg-accent text-white px-5 py-2.5 rounded-full hover:bg-red-600 transition-all shadow-lg shadow-red-500/20"
             onClick={() => setMenuOpen(false)}
           >
             {CTA_LINK.label}
-          </a>
+          </a> */}
+
+          <CTAButton />
           {/* Dark mode toggle (desktop only, inside nav for flex order) */}
           <button
             type="button"
             onClick={toggleTheme}
-            className="hidden md:flex p-2 rounded-full text-gray-900 dark:text-white hover:text-accent dark:hover:bg-slate-800 transition-colors"
+            className="hidden md:flex p-2 rounded-full text-primary dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             <span className="material-icons">

@@ -1,9 +1,14 @@
+import { OurMissionSection } from "../../components/OurMissionSection/OurMissionSection";
+import { Footer } from "../../components/Footer/Footer";
 
 export function About() {
   return (
     <>
       {/* Hero / Mission section */}
-      <section className="relative pt-20 pb-32 overflow-hidden hero-gradient" id="about">
+      <section
+        className="relative pt-20 pb-32 overflow-hidden hero-gradient"
+        id="about"
+      >
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 mb-8">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
@@ -22,8 +27,9 @@ export function About() {
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12">
-            We believe high-end digital presence shouldn&apos;t be a luxury. We&apos;re
-            leveling the playing field for small businesses in the AI era.
+            We believe high-end digital presence shouldn&apos;t be a luxury.
+            We&apos;re leveling the playing field for small businesses in the AI
+            era.
           </p>
 
           <div className="relative max-w-5xl mx-auto group">
@@ -50,9 +56,9 @@ export function About() {
             </h2>
             <div className="space-y-6 text-slate-600 dark:text-slate-400 text-lg">
               <p>
-                The digital landscape shifted overnight. As AI transformed how we
-                build and interact with the web, we saw an opportunity to disrupt
-                the traditional agency model.
+                The digital landscape shifted overnight. As AI transformed how
+                we build and interact with the web, we saw an opportunity to
+                disrupt the traditional agency model.
               </p>
               <p>
                 We founded BIZLAUNCH to strip away the complexity. No 5-figure
@@ -108,7 +114,9 @@ export function About() {
                   auto_awesome
                 </span>
               </div>
-              <h3 className="font-display font-bold text-xl mb-3">Simplicity</h3>
+              <h3 className="font-display font-bold text-xl mb-3">
+                Simplicity
+              </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 We strip away the noise to focus on what converts your visitors
                 into customers.
@@ -123,8 +131,8 @@ export function About() {
               </div>
               <h3 className="font-display font-bold text-xl mb-3">Fairness</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Quality web design should be accessible to the coffee shop owner,
-                not just the tech CEO.
+                Quality web design should be accessible to the coffee shop
+                owner, not just the tech CEO.
               </p>
             </div>
 
@@ -149,8 +157,8 @@ export function About() {
               </div>
               <h3 className="font-display font-bold text-xl mb-3">Growth</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                We don&apos;t just build sites; we build engines for your business
-                expansion.
+                We don&apos;t just build sites; we build engines for your
+                business expansion.
               </p>
             </div>
           </div>
@@ -160,7 +168,11 @@ export function About() {
       {/* Why free section */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+          <svg
+            className="w-full h-full"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+          >
             <path
               d="M0 100 C 20 0 50 0 100 100"
               fill="none"
@@ -177,15 +189,15 @@ export function About() {
             <div className="space-y-6 text-slate-300 text-lg">
               <p>
                 The biggest barrier to digital success is the initial{" "}
-                <span className="text-white font-bold">financial hurdle</span>. We&apos;ve
-                seen too many brilliant small businesses fail because they
-                couldn&apos;t afford a professional presence.
+                <span className="text-white font-bold">financial hurdle</span>.
+                We&apos;ve seen too many brilliant small businesses fail because
+                they couldn&apos;t afford a professional presence.
               </p>
               <p>
-                By removing the upfront cost, we align our success with yours. We
-                build your foundation for free because we believe in the value of
-                long-term partnerships. When your business grows, we grow
-                together.
+                By removing the upfront cost, we align our success with yours.
+                We build your foundation for free because we believe in the
+                value of long-term partnerships. When your business grows, we
+                grow together.
               </p>
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div>
@@ -205,7 +217,12 @@ export function About() {
           </div>
         </div>
       </section>
+
+     
+      {/* <OurMissionSection /> */}
+
+      {/* Footer */}
+      {/* <Footer /> */}
     </>
   );
 }
-
