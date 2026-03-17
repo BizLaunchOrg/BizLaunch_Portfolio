@@ -1,5 +1,6 @@
 // import { OurMissionSection } from "../../components/OurMissionSection/OurMissionSection";
-import { Footer } from "../../components/Footer/Footer";
+
+// import { Footer } from "../../components/Footer/Footer";
 
 export function About() {
   return (
@@ -221,7 +222,7 @@ export function About() {
       {/* <OurMissionSection /> */}
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

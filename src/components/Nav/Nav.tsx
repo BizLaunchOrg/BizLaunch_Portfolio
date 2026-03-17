@@ -18,17 +18,20 @@ export function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/50 dark:border-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo and brand name */}
+
         <div className="flex items-center gap-2">
+          <Link to="/ ">
           <img
             alt="BIZLAUNCH Logo"
             className="h-8 w-8 object-contain"
-            src={LOGO_IMG}
+            src={LOGO_IMG }
           />
-          <Link to="/" className="hidden sm:inline-block">
-            <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
+          </Link>
+        
+            <span className="font-extrabold text-xl hidden sm:inline-block tracking-tight text-primary dark:text-white">
               BIZLAUNCH
             </span>
-          </Link>
+          
         </div>
 
         {/* Mobile: theme + menu buttons. Desktop: nav (with theme at end) */}
