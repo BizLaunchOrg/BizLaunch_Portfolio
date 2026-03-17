@@ -1,4 +1,3 @@
-import React from "react";
 import { MdVisibility, MdRocketLaunch } from "react-icons/md";
 import { MdCheckCircle, MdBolt, MdPlayArrow } from "react-icons/md";
 import {

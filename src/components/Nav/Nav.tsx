@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { NAV_LINKS, CTA_LINK, LOGO_IMG } from "../../constants/links";
+import { NAV_LINKS, LOGO_IMG } from "../../constants/links";
 import { useTheme } from "../../contexts/ThemeContext";
 import CTAButton from "../ctaButton/ctaButton";
 
@@ -24,11 +24,11 @@ export function Nav() {
             className="h-8 w-8 object-contain"
             src={LOGO_IMG}
           />
-        <Link to="/" className="hidden sm:inline-block">
-  <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
-    BIZLAUNCH
-  </span>
-</Link>
+          <Link to="/" className="hidden sm:inline-block">
+            <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
+              BIZLAUNCH
+            </span>
+          </Link>
         </div>
 
         {/* Mobile: theme + menu buttons. Desktop: nav (with theme at end) */}
@@ -78,7 +78,7 @@ export function Nav() {
               >
                 {link.label}
               </Link>
-            )
+            ),
           )}
           {/* <a
             href={CTA_LINK.href}

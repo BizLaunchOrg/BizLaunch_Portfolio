@@ -218,11 +218,10 @@ export function About() {
         </div>
       </section>
 
-     
       {/* <OurMissionSection /> */}
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
