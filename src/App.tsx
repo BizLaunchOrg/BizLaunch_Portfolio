@@ -9,10 +9,12 @@ function App() {
     <>
       <ScrollToTop />
       <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <div className="animate-slide-up">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
       </MainLayout>
     </>
   );
