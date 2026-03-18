@@ -10,7 +10,7 @@ export function WhySection() {
             Why are we giving away websites?
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Most agencies charge $5,000+ upfront. We believe in your business
+            Most agencies charge #5,000+ upfront. We believe in your business
             growth. If you succeed, we succeed.
           </p>
         </div>
@@ -27,7 +27,7 @@ export function WhySection() {
                 <span className="material-icons text-accent text-sm mt-1">
                   close
                 </span>
-                Massive $5k-$10k upfront setup fees
+                Massive #5k-#10k upfront setup fees
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-icons text-accent text-sm mt-1">
@@ -60,7 +60,7 @@ export function WhySection() {
                 <span className="material-icons text-emerald-400 text-sm mt-1">
                   check
                 </span>
-                $0 Setup & Design Fees. Always.
+                #0 Setup & Design Fees. Always.
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-icons text-emerald-400 text-sm mt-1">

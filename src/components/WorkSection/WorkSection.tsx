@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 const CASE_STUDIES = [
   {
     tag: "E-Commerce",
@@ -38,15 +38,15 @@ export function WorkSection() {
               Real businesses, real results, zero design fees.
             </p>
           </div>
-          <a
-            href="#"
-            className="hidden md:block font-bold text-accent hover:underline"
-          >
-            View Full Portfolio →
-          </a>
+         <Link
+  to="/work"
+  className="hidden md:block font-bold text-accent hover:underline"
+>
+  View Full Portfolio →
+</Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
           {CASE_STUDIES.map((study) => (
             <article
               key={study.title}
