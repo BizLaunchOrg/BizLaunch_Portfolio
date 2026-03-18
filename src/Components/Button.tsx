@@ -1,8 +1,4 @@
-import React, {
-  ButtonHTMLAttributes,
-  ReactNode,
-  AnchorHTMLAttributes,
-} from "react";
+import React, { type ButtonHTMLAttributes, type ReactNode } from "react";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** content inside the button */

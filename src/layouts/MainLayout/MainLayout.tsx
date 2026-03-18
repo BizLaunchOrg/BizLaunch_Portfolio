@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { Nav } from "../../components/Nav/Nav";
-import { Footer } from "../../components/Footer/Footer";
+import { Nav } from "../../Components/Nav/Nav";
+import { Footer } from "../../Components/Footer/Footer";
 
 
 export function MainLayout({ children }: { children: ReactNode }) {

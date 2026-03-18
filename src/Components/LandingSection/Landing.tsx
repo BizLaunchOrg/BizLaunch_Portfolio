@@ -1,4 +1,3 @@
-import { IoArrowForward } from "react-icons/io5";
 import {
   MdWarning,
   MdCheckCircle,
@@ -7,12 +6,10 @@ import {
   MdAdsClick,
 } from "react-icons/md";
 import Button from "../Button";
-import ButtonGroup from "../ButtonGroup";
 import RecentWork from "./RecentWork";
 import SaveSection from "./SaveSection";
 import ContactSection from "./ContactSection";
 import HowItWorksSection from "./HowItWorksSection";
-import StatsSection from "./StatsSection";
 import FAQSection from "./FAQSection";
 import { ArrowForward, ShoppingCart } from "@mui/icons-material";
 

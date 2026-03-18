@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import {
   FOOTER_QUICK_LINKS,
   FOOTER_LEGAL_LINKS,
-  FOOTER_LOGO_IMG,
-} from "../../constants/links";
+ 
+  LOGO_IMG,
+} from "../../Constants/links";
 
 /**
  * Site footer: logo, tagline, social icons, quick links, and legal links.
@@ -13,16 +15,19 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
+           <Link to="/">
           <div className="col-span-1 md:col-span-2 space-y-6">
             <div className="flex items-center gap-2">
               <img
                 alt="BIZLAUNCH logo"
-                className="h-8 brightness-0 invert"
-                src={FOOTER_LOGO_IMG}
+                className="h-8 "
+                src={LOGO_IMG}
               />
+             
               <span className="font-extrabold text-xl tracking-tight">
                 BIZLAUNCH
               </span>
+             
             </div>
             <p className="text-slate-400 max-w-sm">
               Building the future of small business online. High-converting
@@ -51,7 +56,7 @@ export function Footer() {
                 <span className="material-icons text-xl">linked_camera</span>
               </a>
             </div>
-          </div>
+          </div></Link>
 
           {/* Quick Links */}
           <div>

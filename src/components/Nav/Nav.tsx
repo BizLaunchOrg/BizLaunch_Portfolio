@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { NAV_LINKS, CTA_LINK, LOGO_IMG } from "../../constants/links";
+import { NAV_LINKS, LOGO_IMG } from "../../Constants/links";
 import { useTheme } from "../../contexts/ThemeContext";
+import CTAButton from "../ctaButton/ctaButton";
 
 /**
  * Navigation bar: logo, links, and CTA button.
@@ -17,15 +18,20 @@ export function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/50 dark:border-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo and brand name */}
+
         <div className="flex items-center gap-2">
+          <Link to="/ ">
           <img
             alt="BIZLAUNCH Logo"
             className="h-8 w-8 object-contain"
-            src={LOGO_IMG}
+            src={LOGO_IMG }
           />
-          <span className="font-extrabold text-xl tracking-tight text-primary dark:text-white">
-            BIZLAUNCH
-          </span>
+          </Link>
+        
+            <span className="font-extrabold text-xl hidden sm:inline-block tracking-tight text-primary dark:text-white">
+              BIZLAUNCH
+            </span>
+          
         </div>
 
         {/* Mobile: theme + menu buttons. Desktop: nav (with theme at end) */}
@@ -75,15 +81,17 @@ export function Nav() {
               >
                 {link.label}
               </Link>
-            )
+            ),
           )}
-          <a
+          {/* <a
             href={CTA_LINK.href}
             className="bg-accent text-white px-5 py-2.5 rounded-full hover:bg-red-600 transition-all shadow-lg shadow-red-500/20"
             onClick={() => setMenuOpen(false)}
           >
             {CTA_LINK.label}
-          </a>
+          </a> */}
+
+          <CTAButton />
           {/* Dark mode toggle (desktop only, inside nav for flex order) */}
           <button
             type="button"

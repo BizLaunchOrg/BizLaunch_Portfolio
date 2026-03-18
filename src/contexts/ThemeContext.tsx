@@ -14,9 +14,6 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
-/**
- * Provides dark/light theme state and syncs it to the document (for Tailwind's dark: classes).
- */
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === "undefined") return false;
@@ -25,13 +22,17 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
+  // Sync <html> class immediately and store preference
   useEffect(() => {
     const root = document.documentElement;
+
+    // Remove dark first (important!)
+    root.classList.remove("dark");
+
     if (isDark) {
       root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
     }
+
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [isDark]);
 

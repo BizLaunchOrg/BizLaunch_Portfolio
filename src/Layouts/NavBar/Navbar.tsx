@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { logo } from "../../Constants/Contants";
 import { Link } from "react-router-dom";
-import ButtonGroup from "../../Components/ButtonGroup";
 import Button from "../../Components/Button";
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { IoMenu, IoClose } from "react-icons/io5";
