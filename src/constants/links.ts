@@ -5,7 +5,9 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
+   { label: "Mission", href: "/ourmission" },
   { label: "Pricing", href: "/pricing" },
+  
 ] as const;
 
 export const CTA_LINK = { label: "Get Your FREE Website" };

@@ -1,6 +1,3 @@
-/**
- * Four feature cards: Mobile-First, SEO Ready, Lightning Fast, Maintenance.
- */
 const FEATURES = [
   {
     icon: "smartphone",
@@ -30,28 +27,33 @@ const FEATURES = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 px-4 bg-slate-50 dark:bg-slate-900/50">
-  <div className="text-center mb-16">
-            <h2 className="font-display text-5xl font-bold mb-4">
-              Everything you need.{" "}
-              <span className="text-red-600">Zero Cost.</span>
-            </h2>
-            <p className="text-slate-600 dark:text-slate-400">
-              Premium features that other agencies charge extra for.
-            </p>
-          </div>      
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900/50">
+      {/* Section Header */}
+      <div className="text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          Everything you need.{" "}
+          <span className="text-red-600">Zero Cost.</span>
+        </h2>
+        <p className="text-md sm:text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+          Premium features that other agencies charge extra for.
+        </p>
+      </div>
+
+      {/* Feature Cards Grid */}
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {FEATURES.map((feature) => (
             <div
               key={feature.title}
-              className="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
+              className="p-6 sm:p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-start"
             >
-              <span className="material-icons text-accent text-3xl mb-4">
+              <span className="material-icons text-accent text-4xl sm:text-5xl mb-4">
                 {feature.icon}
               </span>
-              <h4 className="font-bold text-lg mb-2">{feature.title}</h4>
-              <p className="text-sm text-slate-500">{feature.description}</p>
+              <h4 className="font-bold text-lg sm:text-xl mb-2">{feature.title}</h4>
+              <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
