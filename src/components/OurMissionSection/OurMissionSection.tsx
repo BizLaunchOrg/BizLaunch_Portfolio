@@ -1,6 +1,7 @@
 import { MdVisibility, MdRocketLaunch, MdCheckCircle, MdBolt, MdPlayArrow, MdPayments, MdSpeed, MdTrendingUp, MdSupportAgent } from "react-icons/md";
 import { ContactSection } from "../ContactSection/ContactSection";
 import { Link } from "react-router-dom";
+import ContactUs from "../../pages/ContactUs/ContactUs";
 
 const OurMissionSection = () => {
   return (
@@ -197,7 +198,7 @@ const OurMissionSection = () => {
       </div>
 
       {/* Contact Section */}
-      <ContactSection />
+        <ContactUs/>
     </>
   );
 };

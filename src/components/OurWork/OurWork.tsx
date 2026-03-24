@@ -6,6 +6,7 @@ import {
 } from "react-icons/md";
 import PortfolioCard from "./ourWorkCard";
 import { useState } from "react";
+import ContactUs from "../../pages/ContactUs/ContactUs";
 
 const OurWork = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -196,107 +197,8 @@ const OurWork = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-background-dark" id="contact">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
-            <div className="grid lg:grid-cols-2">
-              {/* LEFT */}
-              <div className="p-12 lg:p-20 bg-primary text-white">
-                <h2 className="font-display text-4xl font-bold mb-8">
-                  Ready to be our next success story?
-                </h2>
-                <p className="text-slate-300 text-lg mb-12">
-                  Apply for your free website build today. We select 5 businesses every month to partner with.
-                </p>
-
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                      <MdCheckCircle className="text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">No hidden costs</h4>
-                      <p className="text-slate-400 text-sm">
-                        We build it for free, you just cover hosting.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                      <MdFlashOn className="text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Fast Turnaround</h4>
-                      <p className="text-slate-400 text-sm">
-                        Live in as little as 10 business days.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* RIGHT (Form) */}
-              <div className="p-12 lg:p-20">
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="John Doe"
-                        className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-accent transition-all text-slate-900 dark:text-white"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="john@example.com"
-                        className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-accent transition-all text-slate-900 dark:text-white"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
-                      Business Type
-                    </label>
-                    <select className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-accent transition-all text-slate-900 dark:text-white">
-                      <option>Restaurant</option>
-                      <option>E-commerce</option>
-                      <option>Service Provider</option>
-                      <option>Consultancy</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
-                      Tell us about your project
-                    </label>
-                    <textarea
-                      rows="4"
-                      placeholder="I need a website to..."
-                      className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-accent transition-all text-slate-900 dark:text-white"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition-colors shadow-lg shadow-primary/20"
-                  >
-                    Send Application
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactUs/>
+     
     </>
   );
 };

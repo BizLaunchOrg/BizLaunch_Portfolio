@@ -1,2 +1,12 @@
-/*image */
-export {default as logo} from '../assets/logo.png'
+import React from "react";
+
+
+const Constants = () => {
+  return (
+    <div>
+    
+    </div>
+  );
+};
+
+export default Constants;

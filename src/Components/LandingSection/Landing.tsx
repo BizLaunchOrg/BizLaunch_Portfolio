@@ -10,11 +10,13 @@ import Button from "../Button";
 import ButtonGroup from "../ButtonGroup";
 import RecentWork from "./RecentWork";
 import SaveSection from "./SaveSection";
-import ContactSection from "./ContactSection";
+
 import HowItWorksSection from "./HowItWorksSection";
 import StatsSection from "./StatsSection";
 import FAQSection from "./FAQSection";
 import { ArrowForward, ShoppingCart } from "@mui/icons-material";
+import ContactUs from "../../pages/ContactUs/ContactUs";
+
 
 export default function Landing() {
   return (
@@ -30,7 +32,7 @@ export default function Landing() {
               Get a <span className="text-gray-900 bg-red-100">FREE</span>{" "}
               business website that actually brings customers
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-xl text-slate-00 dark:text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Stop paying thousands for design. We build your high-converting
               site for free. You only pay for your domain. Optional paid ads
               available when you're ready to scale.
@@ -109,7 +111,7 @@ export default function Landing() {
                       New Order Received!
                     </p>
                     <p className="text-[10px] text-red-500 font-bold">
-                      +$149.00
+                      +#149.00
                     </p>
                   </div>
                 </div>
@@ -119,39 +121,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      {/* problem/solution section */}
-      <div className="max-w-5xl mx-auto px-4 text-center mt-24">
-        <h2 className="font-display text-3xl lg:text-5xl font-bold mb-8">
-          The Internet shouldn't be a luxury.
-        </h2>
-        <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12">
-          In January 2025, we realized that small businesses were being left
-          behind. Agencies charge thousands for basic sites, and "easy" builders
-          take hours you don't have. We're changing the game.
-        </p>
-        <div className="grid md:grid-cols-2 gap-8 text-left">
-          <div className="p-8 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
-            <MdWarning className="text-red-600 text-4xl mb-4" />
-            <h3 className="text-xl font-bold mb-3">The Problem</h3>
-            <p className="text-slate-600 dark:text-slate-400">
-              High agency costs ($3k+) and complex builders prevent local
-              businesses from going digital, costing them thousands in lost
-              sales every month.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-2xl bg-gray-900 text-white">
-            <MdCheckCircle className="text-green-400 text-4xl mb-4" />
-            <h3 className="text-xl font-bold mb-3">Our Solution</h3>
-            <p className="text-slate-300">
-              We build your site{" "}
-              <span className="text-white font-bold">Free of Charge</span>. You
-              get a world-class, conversion-focused website. We get to fulfill
-              our mission of digital equity.
-            </p>
-          </div>
-        </div>
-      </div>
+     
 
       {/* features section */}
       <div className="w-full bg-slate-100 py-20 mt-20">
@@ -281,8 +251,8 @@ export default function Landing() {
       {/* FAQ section */}
       <FAQSection />
 
-      {/* contact form section */}
-      <ContactSection />
+      {/* contact  */}
+        <ContactUs/>
     </section>
   );
 }

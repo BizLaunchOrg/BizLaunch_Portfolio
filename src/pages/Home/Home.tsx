@@ -12,7 +12,8 @@ import { HowItWorksSection } from "../../components/HowItWorksSection/HowItWorks
 import { WorkSection } from "../../components/WorkSection/WorkSection";
 import { FAQSection } from "../../components/FAQSection/FAQSection";
 import { FinalCTASection } from "../../components/FinalCTASection/FinalCTASection";
-import { ContactSection } from "../../components/ContactSection/ContactSection";
+
+import ContactUs from "../ContactUs/ContactUs";
 
 export function Home() {
   return (
@@ -27,7 +28,7 @@ export function Home() {
       <WorkSection />
       <FAQSection />
       <FinalCTASection />
-      <ContactSection />
+      <ContactUs/>
     </>
   );
 }

@@ -42,7 +42,7 @@ export function Footer() {
                 <span className="material-icons text-xl">facebook</span>
               </a>
               <a
-                href="#"
+                href="mailto:freebusinessweb@gmail.com"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors"
                 aria-label="Email"
               >

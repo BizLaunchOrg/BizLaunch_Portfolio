@@ -16,7 +16,7 @@ export default function CTAButton() {
       {open && (
         <div className="absolute top-14 left-0 w-64 bg-white shadow-lg rounded-xl p-4 flex flex-col gap-3">
           <a
-            href="https://wa.me/2348012345678"
+            href="https://wa.me/+2349132630151"
             target="_blank"
             className="flex items-center justify-center gap-2 bg-green-500 text-white py-2 rounded"
           >
@@ -25,7 +25,7 @@ export default function CTAButton() {
           </a>
 
           <a
-            href="mailto:youremail@gmail.com"
+            href="mailto:freebusinessweb@gmail.com"
             className="flex items-center justify-center gap-2 bg-gray-900 text-white py-2 rounded"
           >
             <FaEnvelope size={18} />
