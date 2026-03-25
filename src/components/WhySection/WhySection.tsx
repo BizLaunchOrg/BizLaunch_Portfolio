@@ -24,7 +24,7 @@ export function WhySection() {
         </span>
         <h3 className="text-xl font-bold mb-3">The Problem</h3>
         <p className="text-slate-600 dark:text-slate-400">
-          High agency costs ($3k+) and complex builders prevent local businesses
+          High agency costs (#3k+) and complex builders prevent local businesses
           from going digital, costing them thousands in lost sales every month.
         </p>
       </div>
