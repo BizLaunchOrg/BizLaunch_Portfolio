@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { MainLayout } from "./layouts/MainLayout/MainLayout";
+import { MainLayout } from "./Layouts/MainLayout/MainLayout";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
-import { ScrollToTop } from "./components/Common/ScrollToTop";
-import OurMissionSection from "./components/OurMissionSection/OurMissionSection";
-import { ContactSection } from "./components/ContactSection/ContactSection";
-import OurWork from "./components/OurWork/OurWork";
+import { ScrollToTop } from "./Components/Common/ScrollToTop";
+import OurMissionSection from "./Components/OurMissionSection/OurMissionSection";
+import { ContactSection } from "./Components/ContactSection/ContactSection";
+import OurWork from "./Components/OurWork/OurWork";
 
 function App() {
   return (
