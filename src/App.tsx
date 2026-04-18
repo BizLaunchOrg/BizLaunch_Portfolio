@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layouts/MainLayout/MainLayout";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
-import { ScrollToTop } from "./Components/Common/ScrollToTop";
-import OurMissionSection from "./Components/OurMissionSection/OurMissionSection";
+import { ScrollToTop } from "./components/Common/ScrollToTop";
+import OurMissionSection from "./components/OurMissionSection/OurMissionSection";
 import ContactUs from "./pages/ContactUs/ContactUs";
-import OurWork from "./Components/OurWork/OurWork";
+import OurWork from "./components/OurWork/OurWork";
 
 function App() {
   return (
