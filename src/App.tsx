@@ -5,6 +5,7 @@ import { About } from "./pages/About/About";
 import { ScrollToTop } from "./components/Common/ScrollToTop";
 import OurMissionSection from "./components/OurMissionSection/OurMissionSection";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import { GetStarted } from "./pages/GetStarted/GetStarted";
 import OurWork from "./components/OurWork/OurWork";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/OurMission" element={<OurMissionSection />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/get-started" element={<GetStarted />} />
           <Route path="/work" element={<OurWork />} />
         </Routes>
       </MainLayout>

@@ -13,18 +13,19 @@ export default function Footer() {
             <span className="bg-purple-500 w-8 h-8 flex items-center justify-center rounded-sm text-white font-bold">A</span>
             Agency Home
           </h2> */}
-           <div className="flex items-center gap-5">
-        <Link to="/">
-          <img
-            src={logo}
-            alt="BizLaunch Logo"
-            className="h-8 w-auto" 
-          />
-          </Link>
-          <span className="text-lg font-semibold  text-white">
-            BizLaunch
-          </span>
-        </div>
+           <Link
+             to="/"
+             className="flex items-center gap-5 hover:opacity-90 transition-opacity w-fit"
+           >
+             <img
+               src={logo}
+               alt="BizLaunch Logo"
+               className="h-8 w-auto"
+             />
+             <span className="text-lg font-semibold text-white">
+               BizLaunch
+             </span>
+           </Link>
           <p className="mt-4 text-gray-400">
             Empowering small businesses since 2025. We believe in high-end design for everyone, regardless of their budget.
           </p>

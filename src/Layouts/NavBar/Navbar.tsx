@@ -28,15 +28,16 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <Link to="/">
-            <img src={logo} alt="BizLaunch Logo" className="h-8 w-auto" />
-          </Link>
+        {/* Logo + name → home */}
+        <Link
+          to="/"
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+        >
+          <img src={logo} alt="BizLaunch Logo" className="h-8 w-auto" />
           <span className="text-lg font-semibold text-slate-900 dark:text-white">
             BizLaunch
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
