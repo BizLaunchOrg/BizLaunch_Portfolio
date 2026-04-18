@@ -1,12 +1,11 @@
 import type { ReactNode } from "react";
-import { Nav } from "../../Components/Nav/Nav";
-import { Footer } from "../../Components/Footer/Footer";
-
+import Navbar from "../../Layouts/NavBar/Navbar";
+import Footer from "../../Layouts/footer/Footer";
 
 export function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Nav />
+      <Navbar />
       <main className="pt-4">{children}</main>
       <Footer />
     </>

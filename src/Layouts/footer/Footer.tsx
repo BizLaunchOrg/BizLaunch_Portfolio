@@ -49,7 +49,7 @@ export default function Footer() {
               <Link to="/pricing" className="hover:text-white transition-colors duration-200 text-sm">Pricing Details</Link>
             </li>
             <li>
-              <Link to="/mission" className="hover:text-white transition-colors duration-200 text-sm">Our Mission</Link>
+              <Link to="/OurMission" className="hover:text-white transition-colors duration-200 text-sm">Our Mission</Link>
             </li>
           </ul>
         </div>

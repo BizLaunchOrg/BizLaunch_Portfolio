@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
           <Link to="/about" className="hover:text-slate-900 dark:hover:text-white">About</Link>
-          <Link to="/mission" className="hover:text-slate-900 dark:hover:text-white">Mission</Link>
+          <Link to="/OurMission" className="hover:text-slate-900 dark:hover:text-white">Mission</Link>
           <Link to="/work" className="hover:text-slate-900 dark:hover:text-white">Work</Link>
           <Link to="/pricing" className="hover:text-slate-900 dark:hover:text-white">Pricing</Link>
           <Link to="/contact" className="hover:text-slate-900 dark:hover:text-white">Contact</Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 px-6 py-6 space-y-4">
           <Link to="/about" className="block">About</Link>
-          <Link to="/mission" className="block">Mission</Link>
+          <Link to="/OurMission" className="block">Mission</Link>
           <Link to="/work" className="block">Work</Link>
           <Link to="/pricing" className="block">Pricing</Link>
           <Link to="/contact" className="block">Contact</Link>

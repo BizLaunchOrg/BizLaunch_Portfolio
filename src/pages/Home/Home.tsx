@@ -12,7 +12,7 @@ import { HowItWorksSection } from "../../Components/HowItWorksSection/HowItWorks
 import { WorkSection } from "../../Components/WorkSection/WorkSection";
 import { FAQSection } from "../../Components/FAQSection/FAQSection";
 import { FinalCTASection } from "../../Components/FinalCTASection/FinalCTASection";
-import { ContactSection } from "../../Components/ContactSection/ContactSection";
+import ContactUs from "../ContactUs/ContactUs";
 
 export function Home() {
   return (
@@ -27,7 +27,7 @@ export function Home() {
       <WorkSection />
       <FAQSection />
       <FinalCTASection />
-      <ContactSection />
+      <ContactUs />
     </>
   );
 }

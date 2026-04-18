@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import { MainLayout } from "./Layouts/MainLayout/MainLayout";
+import { MainLayout } from "./layouts/MainLayout/MainLayout";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { ScrollToTop } from "./Components/Common/ScrollToTop";
 import OurMissionSection from "./Components/OurMissionSection/OurMissionSection";
-import { ContactSection } from "./Components/ContactSection/ContactSection";
+import ContactUs from "./pages/ContactUs/ContactUs";
 import OurWork from "./Components/OurWork/OurWork";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/OurMission" element={<OurMissionSection />} />
-          <Route path="/contact" element={<ContactSection />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/work" element={<OurWork />} />
         </Routes>
       </MainLayout>
